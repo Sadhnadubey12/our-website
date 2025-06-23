@@ -96,8 +96,12 @@
               class="offcanvas__top mb-5 d-flex justify-content-between align-items-center"
             >
               <div class="offcanvas__logo">
-                <a href="index.html">
-                  <img src="assets/img/logo/our logo.png" alt="logo-img" />
+                <a href="index.html" class="header-logo">
+                  <img
+                    src="assets/img/logo/1750690734437.jpg"
+                    alt="logo-img"
+                    style="width: 170px; height: 70px; object-fit: contain"
+                  />
                 </a>
               </div>
               <div class="offcanvas__close">
@@ -120,9 +124,7 @@
                     <i class="fal fa-map-marker-alt"></i>
                   </div>
                   <div class="offcanvas__contact-text">
-                    <a target="_blank" href="#"
-                      >K-block, Street No.- 2, Mahipalpur, Delhi</a
-                    >
+                    <a target="_blank" href="#">Mahipalpur, Delhi, 110037</a>
                   </div>
                 </li>
                 <li class="d-flex align-items-center">
@@ -130,8 +132,8 @@
                     <i class="fal fa-envelope"></i>
                   </div>
                   <div class="offcanvas__contact-text">
-                    <a target="_blank" href="mailto:Vivek322645@gmail.com"
-                      >Vivek322645@gmail.com</a
+                    <a target="_blank" href="mailto: webgrosolutions@gmail.com">
+                      webgrosolutions@gmail.com</a
                     >
                   </div>
                 </li>
@@ -140,7 +142,7 @@
                     <i class="fal fa-clock"></i>
                   </div>
                   <div class="offcanvas__contact-text">
-                    <a target="_blank" href="#">Mod-friday, 09am -07pm</a>
+                    <a target="_blank" href="#">Mod-friday, 09am -06pm</a>
                   </div>
                 </li>
                 <li class="d-flex align-items-center">
@@ -201,7 +203,7 @@
               </li>
               <li>
                 <i class="fal fa-envelope"></i>
-                <a href="#">Vivek322645@gmail.com</a>
+                <a href="#"> webgrosolutions@gmail.com</a>
               </li>
               <li>
                 <i class="far fa-clock"></i>
@@ -210,10 +212,18 @@
             </ul>
             <!-- /.topbar__info -->
             <div class="social">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a
+                href="https://www.facebook.com/share/1AuqcLP2nF/"
+                target="_blank"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
               <a href="#"><i class="fab fa-twitter"></i></a>
               <a href="#"><i class="fab fa-linkedin-in"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a
+                href="https://www.instagram.com/webgro__solutions?igsh=MXBjazRjem9rNzczeg=="
+                target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
             </div>
           </div>
           <!-- /.topbar__inner -->
@@ -230,7 +240,11 @@
                 <div class="header-left">
                   <div class="logo">
                     <a href="index.html" class="header-logo">
-                      <img src="assets/img/logo/our logo.png" alt="logo-img" />
+                      <img
+                        src="assets/img/logo/1750690734437.jpg"
+                        alt="logo-img"
+                        style="width: 170px; height: 70px; object-fit: contain"
+                      />
                     </a>
                   </div>
                 </div>
@@ -267,295 +281,923 @@
       </header>
 
       <!--<< Breadcrumb Section Start >>-->
-      <div
-        class="breadcrumb-wrapper bg-cover"
-        style="background-image: url('assets/img/breadcrumb.jpg')"
-      >
-        <div class="container">
-          <div class="page-heading">
-            <div class="breadcrumb-sub-title">
-              <h1 class="wow fadeInUp" data-wow-delay=".3s">Contact Us</h1>
-              <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
-                <li>
-                  <a href="index-2.html"> Home </a>
-                </li>
-                <li>
-                  <i class="far fa-angle-double-right"></i>
-                </li>
-                <li>Contact Us</li>
-              </ul>
-            </div>
+      <div class="about-banner">
+        <div class="banner-content">
+          <h1 class="banner-title">Contact <span>WebGRo</span> Solutions</h1>
+          <div class="breadcrumbs">
+            <a href="index.html">
+              <i class="fas fa-home breadcrumb-icon"></i> Home
+            </a>
+            <span class="divider">/</span>
+            <span class="current">
+              <i class="fas flaticon-customer-support breadcrumb-icon"></i>
+              Contact</span
+            >
           </div>
         </div>
       </div>
 
+      <style>
+        .about-banner {
+          background: linear-gradient(
+            135deg,
+            #3b82f6 0%,
+            #2563eb 50%,
+            #1e40af 100%
+          );
+          padding: 5rem 1rem;
+          text-align: center;
+          position: relative;
+          overflow: hidden;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-banner::before {
+          content: "";
+          position: absolute;
+          top: -50%;
+          left: -50%;
+          width: 200%;
+          height: 200%;
+          background: radial-gradient(
+            circle,
+            rgba(255, 255, 255, 0.1) 0%,
+            rgba(255, 255, 255, 0) 70%
+          );
+          animation: pulse 15s infinite linear;
+        }
+
+        .banner-content {
+          max-width: 1200px;
+          margin: 0 auto;
+          position: relative;
+          z-index: 2;
+        }
+
+        .banner-title {
+          font-size: clamp(2rem, 5vw, 3.5rem);
+          font-weight: 700;
+          color: white;
+          margin-bottom: 1rem;
+          text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .banner-title span {
+          color: #93c5fd;
+          font-weight: 800;
+        }
+
+        .breadcrumbs {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 0.5rem;
+          font-size: 1.1rem;
+          color: white;
+        }
+
+        .breadcrumbs a {
+          color: white;
+          text-decoration: none;
+          transition: all 0.3s ease;
+        }
+
+        .breadcrumbs a:hover {
+          color: #bfdbfe;
+          text-decoration: underline;
+        }
+
+        .divider {
+          color: rgba(255, 255, 255, 0.7);
+        }
+
+        .current {
+          color: #bfdbfe;
+          font-weight: 500;
+        }
+
+        @keyframes pulse {
+          0% {
+            transform: rotate(0deg);
+          }
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+
+        @media (max-width: 768px) {
+          .about-banner {
+            padding: 3rem 1rem;
+          }
+
+          .banner-title {
+            margin-bottom: 0.8rem;
+          }
+        }
+      </style>
       <!-- Contact Info Section Start -->
       <section class="contact-page-wrap section-padding">
         <div class="container">
           <div class="row g-4">
-            <div class="col-lg-4 col-md-6 col-12">
-              <div class="single-contact-card d-flex align-items-center">
-                <div class="icon">
-                  <i class="flaticon-telephone"></i>
-                </div>
-                <div class="title">
-                  <span>Call Us</span>
-                  <h4>+69 009 494 094</h4>
+            <!-- Phone Card -->
+            <div
+              class="col-lg-4 col-md-6 col-12 wow fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <div
+                class="single-contact-card"
+                onclick="toggleContactCard(this)"
+              >
+                <div class="card-inner">
+                  <div class="icon">
+                    <i class="fas fa-phone-alt"></i>
+                  </div>
+                  <div class="title">
+                    <span>Call Us</span>
+                    <h4><a href="tel:+918051248134">+91 8051248134</a></h4>
+                  </div>
+                  <div class="hover-content">
+                    <p>Available 10AM - 6PM (Mon-Sat)</p>
+                    <a href="tel:+918051248134" class="action-btn">Call Now</a>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-12">
-              <div class="single-contact-card d-flex align-items-center">
-                <div class="icon">
-                  <i class="flaticon-location"></i>
-                </div>
-                <div class="title">
-                  <span>Our Location</span>
-                  <h4>147 New Yors, NY RD 123</h4>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-12">
-              <div class="single-contact-card d-flex align-items-center">
-                <div class="icon">
-                  <i class="flaticon-email"></i>
-                </div>
-                <div class="title">
-                  <span>Mail us</span>
-                  <h4>
+
+            <!-- Location Card -->
+            <div
+              class="col-lg-4 col-md-6 col-12 wow fadeInUp"
+              data-wow-delay="0.3s"
+            >
+              <div
+                class="single-contact-card"
+                onclick="toggleContactCard(this)"
+              >
+                <div class="card-inner">
+                  <div class="icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <div class="title">
+                    <span>Our Location</span>
+                    <h4>Mahipalpur, Delhi, 110037</h4>
+                  </div>
+                  <div class="hover-content">
+                    <p>Corporate office in Delhi NCR</p>
                     <a
-                      href="https://modinatheme.com/cdn-cgi/l/email-protection"
-                      class="__cf_email__"
-                      data-cfemail="9cf4f9f0f0f3dce6f3e8f9fff4b2fff3f1"
-                      >[email&#160;protected]</a
+                      href="https://maps.google.com?q=Mahipalpur+Delhi+110037"
+                      target="_blank"
+                      class="action-btn"
+                      >View on Map</a
                     >
-                  </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Email Card -->
+            <div
+              class="col-lg-4 col-md-6 col-12 wow fadeInUp"
+              data-wow-delay="0.5s"
+            >
+              <div
+                class="single-contact-card"
+                onclick="toggleContactCard(this)"
+              >
+                <div class="card-inner">
+                  <div class="icon">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                  <div class="title">
+                    <span>Mail Us</span>
+                    <h4>
+                      <a href="mailto:webgrosolutions@gmail.com"
+                        >webgrosolutions@gmail.com</a
+                      >
+                    </h4>
+                  </div>
+                  <div class="hover-content">
+                    <p>Response within 24 hours</p>
+                    <a
+                      href="mailto:webgrosolutions@gmail.com"
+                      class="action-btn"
+                      >Send Email</a
+                    >
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      <style>
+        .contact-page-wrap {
+          background: #f9fafc;
+        }
+
+        .single-contact-card {
+          background: white;
+          border-radius: 12px;
+          padding: 30px;
+          height: 100%;
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+          transition: all 0.4s ease;
+          position: relative;
+          overflow: hidden;
+          cursor: pointer;
+        }
+
+        .single-contact-card.active {
+          transform: translateY(-5px);
+          box-shadow: 0 10px 25px rgba(59, 130, 246, 0.15);
+        }
+
+        .card-inner {
+          position: relative;
+          z-index: 2;
+        }
+
+        .icon {
+          width: 60px;
+          height: 60px;
+          background: rgba(59, 130, 246, 0.1);
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 20px;
+        }
+
+        .icon i {
+          font-size: 24px;
+          color: #3b82f6;
+        }
+
+        .title span {
+          display: block;
+          color: #64748b;
+          font-size: 14px;
+          font-weight: 500;
+          margin-bottom: 5px;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+        }
+
+        .title h4 {
+          font-size: 18px;
+          font-weight: 600;
+          color: #1e293b;
+          margin-bottom: 0;
+        }
+
+        .title h4 a {
+          color: inherit;
+          text-decoration: none;
+          transition: all 0.3s ease;
+        }
+
+        .title h4 a:hover {
+          color: #3b82f6;
+        }
+
+        .hover-content {
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 100%;
+          padding: 30px;
+          background: #3b82f6;
+          color: white;
+          border-radius: 0 0 12px 12px;
+          transition: all 0.4s ease;
+          visibility: hidden;
+          opacity: 0;
+        }
+
+        .single-contact-card.active .hover-content {
+          visibility: visible;
+          opacity: 1;
+          top: calc(100% - 30px);
+        }
+
+        .hover-content p {
+          margin-bottom: 15px;
+          font-size: 14px;
+          opacity: 0.9;
+        }
+
+        .action-btn {
+          display: inline-block;
+          padding: 8px 20px;
+          background: white;
+          color: #3b82f6;
+          border-radius: 50px;
+          font-size: 14px;
+          font-weight: 600;
+          text-decoration: none;
+          transition: all 0.3s ease;
+        }
+
+        .action-btn:hover {
+          background: rgba(255, 255, 255, 0.9);
+          transform: translateY(-2px);
+        }
+
+        @media (max-width: 767px) {
+          .single-contact-card {
+            padding: 25px;
+          }
+
+          .hover-content {
+            padding: 25px;
+          }
+        }
+      </style>
+
+      <script>
+        function toggleContactCard(card) {
+          // Close all other open cards first
+          document
+            .querySelectorAll(".single-contact-card.active")
+            .forEach((activeCard) => {
+              if (activeCard !== card) {
+                activeCard.classList.remove("active");
+              }
+            });
+
+          // Toggle the clicked card
+          card.classList.toggle("active");
+        }
+      </script>
 
       <!-- Contact-us Section Start -->
-      <section class="contact-us-wrapper contact-us-2 section-padding">
-        <div class="shape">
-          <img class="shape-1" src="assets/img/shape/shape-21.png" alt="" />
-          <img class="shape-2" src="assets/img/shape/shape-11.png" alt="" />
-          <img class="shape-3" src="assets/img/shape/shape-22.png" alt="" />
-        </div>
+      <section class="webgro-contact-wrapper section-padding">
         <div class="container">
           <div class="section-title text-center">
-            <div class="sub-title"><span>CONTACT US</span></div>
+            <div class="sub-title"><span>GET IN TOUCH</span></div>
             <h2>
-              Dealing in All <br />
-              Professional IT Services
+              Let's Build Something
+              <span class="webgro-gradient">Amazing</span> Together
             </h2>
+            <p class="title-description">
+              WebGro Solutions specializes in transforming your digital presence
+            </p>
           </div>
-          <div class="contact-us-inner">
-            <div class="row g-5">
-              <div
-                class="col-xl-6 col-lg-12 col-md-12 pe-xl-0 wow fadeInLeft"
-                data-wow-delay="300ms"
-              >
-                <div class="contact-left">
-                  <form action="#" id="contact-form" method="POST">
-                    <div class="row g-4">
-                      <div
-                        class="col-lg-6 pe-0 wow fadeInUp"
-                        data-wow-delay=".2"
-                      >
-                        <span>First Name</span>
-                        <div class="form-clt">
-                          <input
-                            type="text"
-                            name="name"
-                            placeholder="First Name"
-                          />
-                        </div>
-                      </div>
-                      <div
-                        class="col-lg-6 pe-0 wow fadeInUp"
-                        data-wow-delay=".6"
-                      >
-                        <span>Last Name</span>
-                        <div class="form-clt">
-                          <input
-                            type="text"
-                            name="name"
-                            placeholder="Last Name"
-                          />
-                        </div>
-                      </div>
-                      <div
-                        class="col-lg-12 pe-0 wow fadeInUp"
-                        data-wow-delay=".4"
-                      >
-                        <span>Your Email</span>
-                        <div class="form-clt">
-                          <input
-                            type="email"
-                            name="email"
-                            placeholder="Email"
-                          />
-                        </div>
-                      </div>
-                      <div
-                        class="col-lg-6 pe-0 wow fadeInUp"
-                        data-wow-delay=".2"
-                      >
-                        <span>Phone Number</span>
-                        <div class="form-clt">
-                          <input
-                            type="text"
-                            name="name"
-                            placeholder="Your Phone"
-                          />
-                        </div>
-                      </div>
-                      <div
-                        class="col-lg-6 pe-0 wow fadeInUp"
-                        data-wow-delay=".6"
-                      >
-                        <span>Country</span>
-                        <div class="form-clt">
-                          <input
-                            type="text"
-                            name="phone"
-                            placeholder="Your Country"
-                          />
-                        </div>
-                      </div>
+
+          <div class="webgro-contact-inner">
+            <div class="row g-4">
+              <!-- Left Column - Services Info -->
+              <div class="col-lg-5">
+                <div class="services-info-box">
+                  <h3>Our <span>Services</span></h3>
+                  <div class="services-grid">
+                    <div class="service-card web-dev">
+                      <i class="fas fa-code"></i>
+                      <h4>Web Development</h4>
+                      <p>Custom websites & web applications</p>
                     </div>
-                  </form>
-                  <div class="categories mt-4 pt-3">
-                    <span class="fw-semibold"
-                      >What's the type of your company?</span
-                    >
-                    <div class="categories-items mt-2">
-                      <div class="single-item">It Company</div>
-                      <div class="single-item">Business</div>
-                      <div class="single-item">Cyber Security</div>
-                      <div class="single-item">Other</div>
+                    <div class="service-card ecom">
+                      <i class="fas fa-shopping-cart"></i>
+                      <h4>E-Commerce</h4>
+                      <p>Online stores that convert</p>
+                    </div>
+                    <div class="service-card digital">
+                      <i class="fas fa-bullseye"></i>
+                      <h4>Digital Marketing</h4>
+                      <p>Grow your online presence</p>
+                    </div>
+                    <div class="service-card crm">
+                      <i class="fas fa-users-cog"></i>
+                      <h4>CRM Solutions</h4>
+                      <p>Streamline customer relationships</p>
                     </div>
                   </div>
-                  <div class="checked-box mt-4 pt-3">
-                    <span class="fw-semibold">What you need from us?</span>
-                    <div class="checked-box-items mt-2">
-                      <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          value=""
-                        />
-                        <label class="form-check-label" for="flexCheckDefault">
-                          App Design
-                        </label>
+
+                  <div class="contact-methods">
+                    <div class="contact-method">
+                      <i class="fas fa-envelope"></i>
+                      <div>
+                        <h5>Email Us</h5>
+                        <a href="mailto:webgrosolutions@gmail.com"
+                          >webgrosolutions@gmail.com</a
+                        >
                       </div>
-                      <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          value=""
-                        />
-                        <label class="form-check-label" for="flexCheckDefault">
-                          Digital Marketing
-                        </label>
+                    </div>
+                    <div class="contact-method">
+                      <i class="fas fa-phone-alt"></i>
+                      <div>
+                        <h5>Call Us</h5>
+                        <a href="tel:+918051248134">+91 8051248134</a>
                       </div>
-                      <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          value=""
-                        />
-                        <label class="form-check-label" for="flexCheckDefault">
-                          UI/UX Design
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          value=""
-                        />
-                        <label class="form-check-label" for="flexCheckDefault">
-                          Cloud service
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          value=""
-                        />
-                        <label class="form-check-label" for="flexCheckDefault">
-                          Other Services
-                        </label>
+                    </div>
+                    <div class="contact-method">
+                      <i class="fas fa-map-marker-alt"></i>
+                      <div>
+                        <h5>Our Office</h5>
+                        <p>Mahipalpur, Delhi, 110037</p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div
-                class="col-xl-6 col-lg-12 col-md-12 wow fadeInRight"
-                data-wow-delay="300ms"
-              >
-                <div class="contact-right ps-xl-5 ms-xl-3">
-                  <div class="price-ranger">
-                    <span>Your Service Budget</span>
-                    <div id="slider-range"></div>
-                    <div class="ranger-min-max-block pt-3">
-                      <span class="min">$56</span>
-                      <span class="max">$1578</span>
-                    </div>
-                  </div>
-                  <div class="col-lg-12 wow fadeInUp mt-4" data-wow-delay=".8">
-                    <span>Your Message</span>
-                    <div class="form-clt-big form-clt">
-                      <textarea
-                        name="message"
-                        id="message"
-                        placeholder="Write a Message"
-                      ></textarea>
-                    </div>
-                  </div>
-                  <div class="form-check mt-3">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="flexCheckDefault"
-                    />
-                    <label class="form-check-label" for="flexCheckDefault">
-                      Click the box and agree to our terms and conditions
-                    </label>
-                  </div>
-                  <div
-                    class="contact-btn d-flex align-items-center justify-content-between flex-wrap mt-4"
-                  >
-                    <button type="submit" class="theme-btn black-btn">
-                      Send Message
-                    </button>
 
-                    <div class="infu pt-xxl-0 pt-3">
-                      <img src="assets/img/Avatar.png" alt="" />
-                      <p>Meet With Expert</p>
+              <!-- Right Column - Contact Form -->
+              <div class="col-lg-7">
+                <form id="webgro-contact-form" class="webgro-contact-form">
+                  <div class="form-intro">
+                    <h3>Project <span>Inquiry</span></h3>
+                    <p>
+                      Tell us about your project needs and we'll get back to you
+                      within 24 hours
+                    </p>
+                  </div>
+
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="first_name">First Name*</label>
+                        <input
+                          type="text"
+                          id="first_name"
+                          placeholder="John"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="last_name">Last Name*</label>
+                        <input
+                          type="text"
+                          id="last_name"
+                          placeholder="Doe"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="email">Email*</label>
+                        <input
+                          type="email"
+                          id="email"
+                          placeholder="your@email.com"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input
+                          type="tel"
+                          id="phone"
+                          placeholder="+91 1234567890"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-group">
+                        <label for="company">Company Name</label>
+                        <input
+                          type="text"
+                          id="company"
+                          placeholder="Your Company"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-group">
+                        <label for="serviceDropdown">Service Needed*</label>
+                        <div
+                          class="custom-dropdown"
+                          id="serviceDropdownWrapper"
+                        >
+                          <div
+                            class="custom-dropdown-toggle"
+                            id="dropdownToggle"
+                          >
+                            Select Service
+                          </div>
+                          <ul class="custom-dropdown-menu" id="dropdownMenu">
+                            <li data-value="web-dev">Web Development</li>
+                            <li data-value="ecommerce">E-Commerce Solutions</li>
+                            <li data-value="digital-marketing">
+                              Digital Marketing
+                            </li>
+                            <li data-value="crm">CRM Implementation</li>
+                            <li data-value="other">Other Services</li>
+                          </ul>
+                        </div>
+                        <input
+                          type="hidden"
+                          name="service"
+                          id="serviceInput"
+                          required
+                        />
+                      </div>
+                    </div>
+
+                    <style>
+                      .custom-dropdown {
+                        position: relative;
+                        width: 100%;
+                        background-color: white;
+                        border: 1px solid #ccc;
+                        border-radius: 4px;
+                        cursor: pointer;
+                        user-select: none;
+                      }
+
+                      .custom-dropdown-toggle {
+                        padding: 10px 15px;
+                        color: black;
+                        background-color: white;
+                      }
+
+                      .custom-dropdown-menu {
+                        list-style: none;
+                        margin: 0;
+                        padding: 0;
+                        position: absolute;
+                        top: 100%;
+                        left: 0;
+                        right: 0;
+                        background-color: white;
+                        border: 1px solid #ccc;
+                        border-top: none;
+                        z-index: 1000;
+                        display: none;
+                      }
+
+                      .custom-dropdown-menu li {
+                        padding: 10px 15px;
+                        color: black;
+                      }
+
+                      .custom-dropdown-menu li:hover {
+                        background-color: #f0f0f0;
+                      }
+
+                      .custom-dropdown.open .custom-dropdown-menu {
+                        display: block;
+                      }
+                    </style>
+
+                    <script>
+                      const dropdownWrapper = document.getElementById(
+                        "serviceDropdownWrapper"
+                      );
+                      const toggle = document.getElementById("dropdownToggle");
+                      const menu = document.getElementById("dropdownMenu");
+                      const hiddenInput =
+                        document.getElementById("serviceInput");
+
+                      toggle.addEventListener("click", () => {
+                        dropdownWrapper.classList.toggle("open");
+                      });
+
+                      menu.querySelectorAll("li").forEach((item) => {
+                        item.addEventListener("click", () => {
+                          toggle.textContent = item.textContent;
+                          hiddenInput.value = item.dataset.value;
+                          dropdownWrapper.classList.remove("open");
+                        });
+                      });
+
+                      // Close if clicking outside
+                      document.addEventListener("click", (e) => {
+                        if (!dropdownWrapper.contains(e.target)) {
+                          dropdownWrapper.classList.remove("open");
+                        }
+                      });
+                    </script>
+
+                    <div class="col-12">
+                      <div class="form-group">
+                        <label for="message">Project Details*</label>
+                        <textarea
+                          id="message"
+                          rows="5"
+                          placeholder="Tell us about your project requirements, timeline, and budget"
+                        ></textarea>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input type="checkbox" id="terms" required />
+                        <label for="terms"
+                          >I agree to WebGro Solutions'
+                          <a href="#">Terms & Conditions</a> and
+                          <a href="#">Privacy Policy</a></label
+                        >
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <button type="submit" class="submit-btn">
+                        <span>Submit Inquiry</span>
+                        <i class="fas fa-paper-plane"></i>
+                      </button>
                     </div>
                   </div>
-                </div>
+                </form>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      <style>
+        /* Main Section Styling */
+        .webgro-contact-wrapper {
+          background: #f8fafc;
+          position: relative;
+          overflow: hidden;
+        }
+
+        .section-title .sub-title {
+          color: #3b82f6;
+          font-weight: 600;
+          letter-spacing: 1px;
+          margin-bottom: 10px;
+          display: inline-block;
+        }
+
+        .section-title h2 {
+          font-size: 2.5rem;
+          font-weight: 700;
+          margin-bottom: 15px;
+        }
+
+        .webgro-gradient {
+          background: linear-gradient(90deg, #3b82f6, #10b981);
+          -webkit-background-clip: text;
+          background-clip: text;
+          color: transparent;
+        }
+
+        .title-description {
+          color: #64748b;
+          max-width: 600px;
+          margin: 0 auto;
+        }
+
+        /* Services Info Box */
+        .services-info-box {
+          background: white;
+          border-radius: 12px;
+          padding: 30px;
+          height: 100%;
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .services-info-box h3 {
+          font-size: 1.75rem;
+          margin-bottom: 25px;
+        }
+
+        .services-info-box h3 span {
+          color: #3b82f6;
+        }
+
+        .services-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 15px;
+          margin-bottom: 30px;
+        }
+
+        .service-card {
+          background: #f8fafc;
+          border-radius: 8px;
+          padding: 20px;
+          transition: all 0.3s ease;
+          border-left: 3px solid;
+        }
+
+        .service-card:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-card i {
+          font-size: 1.5rem;
+          margin-bottom: 10px;
+          display: inline-block;
+        }
+
+        .service-card h4 {
+          font-size: 1.1rem;
+          margin-bottom: 5px;
+        }
+
+        .service-card p {
+          color: #64748b;
+          font-size: 0.9rem;
+          margin: 0;
+        }
+
+        /* Service Card Colors */
+        .web-dev {
+          border-color: #3b82f6;
+          color: #3b82f6;
+        }
+        .ecom {
+          border-color: #f59e0b;
+          color: #f59e0b;
+        }
+        .digital {
+          border-color: #10b981;
+          color: #10b981;
+        }
+        .crm {
+          border-color: #8b5cf6;
+          color: #8b5cf6;
+        }
+
+        /* Contact Methods */
+        .contact-methods {
+          margin-top: 30px;
+        }
+
+        .contact-method {
+          display: flex;
+          align-items: center;
+          margin-bottom: 20px;
+        }
+
+        .contact-method i {
+          width: 40px;
+          height: 40px;
+          background: rgba(59, 130, 246, 0.1);
+          color: #3b82f6;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 15px;
+          flex-shrink: 0;
+        }
+
+        .contact-method h5 {
+          font-size: 0.9rem;
+          color: #64748b;
+          margin-bottom: 3px;
+        }
+
+        .contact-method a,
+        .contact-method p {
+          color: #1e293b;
+          font-weight: 500;
+          margin: 0;
+          text-decoration: none;
+        }
+
+        .contact-method a:hover {
+          color: #3b82f6;
+        }
+
+        /* Contact Form Styling */
+        .webgro-contact-form {
+          background: white;
+          border-radius: 12px;
+          padding: 30px;
+          height: 100%;
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .form-intro h3 {
+          font-size: 1.75rem;
+          margin-bottom: 10px;
+        }
+
+        .form-intro h3 span {
+          color: #3b82f6;
+        }
+
+        .form-intro p {
+          color: #64748b;
+          margin-bottom: 25px;
+        }
+
+        .form-group {
+          margin-bottom: 20px;
+        }
+
+        .form-group label {
+          display: block;
+          margin-bottom: 8px;
+          font-weight: 500;
+          color: #334155;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+          width: 100%;
+          padding: 12px 15px;
+          border: 1px solid #e2e8f0;
+          border-radius: 8px;
+          background: #f8fafc;
+          transition: all 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+          border-color: #3b82f6;
+          background: white;
+          box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+          outline: none;
+        }
+
+        .form-group textarea {
+          resize: vertical;
+          min-height: 120px;
+        }
+
+        .form-check {
+          display: flex;
+          align-items: center;
+          margin-top: 20px;
+        }
+
+        .form-check input {
+          margin-right: 10px;
+        }
+
+        .form-check label {
+          font-size: 0.9rem;
+          color: #64748b;
+        }
+
+        .form-check a {
+          color: #3b82f6;
+          text-decoration: none;
+        }
+
+        .form-check a:hover {
+          text-decoration: underline;
+        }
+
+        .submit-btn {
+          background: linear-gradient(90deg, #3b82f6, #2563eb);
+          color: white;
+          border: none;
+          border-radius: 8px;
+          padding: 15px 25px;
+          font-weight: 600;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          width: 100%;
+          margin-top: 15px;
+        }
+
+        .submit-btn i {
+          margin-left: 10px;
+          transition: transform 0.3s ease;
+        }
+
+        .submit-btn:hover {
+          background: linear-gradient(90deg, #2563eb, #3b82f6);
+          box-shadow: 0 5px 15px rgba(59, 130, 246, 0.4);
+        }
+
+        .submit-btn:hover i {
+          transform: translateX(5px);
+        }
+
+        @media (max-width: 991px) {
+          .services-grid {
+            grid-template-columns: 1fr;
+          }
+        }
+
+        @media (max-width: 767px) {
+          .section-title h2 {
+            font-size: 2rem;
+          }
+
+          .services-info-box,
+          .webgro-contact-form {
+            padding: 20px;
+          }
+        }
+      </style>
 
       <!-- Map Section Start -->
       <div class="office-google-map-wrapper wow fadeInUp">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6678.7619084840835!2d144.9618311901502!3d-37.81450084255415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642b4758afc1d%3A0x3119cc820fdfc62e!2sEnvato!5e0!3m2!1sen!2sbd!4v1641984054261!5m2!1sen!2sbd"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28037.60587345465!2d77.11466193836839!3d28.54871359544695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1c1514f5a741%3A0x545ffeef6b14c5aa!2sMahipalpur%2C%20New%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1750708716848!5m2!1sen!2sin"
+          width="600"
+          height="450"
           style="border: 0"
           allowfullscreen=""
           loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
 
@@ -570,7 +1212,13 @@
               </h3>
               <p>As a app web crawler expert, We will help to organize.</p>
             </div>
-            <a href="#" class="theme-btn white-btn">Take a Consultant</a>
+            <a
+              href="https://wa.me/918051248134"
+              target="_blank"
+              class="theme-btn white-btn"
+            >
+              Take a Consultant
+            </a>
           </div>
         </div>
       </section>
@@ -586,8 +1234,12 @@
               >
                 <div class="single-footer-widget me-xxl-5 pe-xxl-4">
                   <div class="widget-head">
-                    <a href="index2.html">
-                      <img src="assets/img/logo/our logo.png" alt="logo-img" />
+                    <a href="index.html" class="header-logo">
+                      <img
+                        src="assets/img/logo/1750690734437.jpg"
+                        alt="logo-img"
+                        style="width: 170px; height: 70px; object-fit: contain"
+                      />
                     </a>
                   </div>
                   <div class="footer-content">
@@ -705,7 +1357,7 @@
                         <a href="#"><i class="flaticon-email"></i></a>
                         <div class="contact-infu">
                           <span> Mail Us: </span>
-                          <h5>Vivek322645@gmail.com</h5>
+                          <h5>webgrosolutions@gmail.com</h5>
                         </div>
                       </div>
                       <div class="contact">
@@ -713,7 +1365,7 @@
                         <div class="contact-infu">
                           <span> Address: </span>
                           <h5 class="text-lowercase">
-                            K-block, Street No. - 2, Mahipalpur, Delhi
+                            Mahipalpur, Delhi , 110037
                           </h5>
                         </div>
                       </div>
@@ -791,5 +1443,47 @@
     <script src="assets/js/wow.min.js"></script>
     <!--<< Main.js >>-->
     <script src="assets/js/main.js"></script>
+    <script>
+      document
+        .getElementById("webgro-contact-form")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          // Get form values
+          const firstName = document.getElementById("first_name").value.trim();
+          const lastName = document.getElementById("last_name").value.trim();
+          const email = document.getElementById("email").value.trim();
+          const phone = document.getElementById("phone").value.trim();
+          const company = document.getElementById("company").value.trim();
+          const service = document.getElementById("serviceInput").value.trim();
+          const message = document.getElementById("message").value.trim();
+
+          // Validate service selection
+          if (!service) {
+            alert("Please select a service.");
+            return;
+          }
+
+          // Format message
+          const emailBody = `
+          Contact Us Inquiry%0D%0A
+          -----------------------%0D%0A
+          Name: ${firstName} ${lastName}%0D%0A
+          Email: ${email}%0D%0A
+          Phone: ${phone}%0D%0A
+          Company: ${company}%0D%0A
+          Service Needed: ${service}%0D%0A
+          Message: ${message}%0D%0A
+        `;
+
+          // Create mailto link
+          const mailtoLink = `mailto:webgrosolutions@gmail.com?subject=Contact Us Inquiry&body=${encodeURIComponent(
+            emailBody
+          )}`;
+
+          // Open default email client
+          window.location.href = mailtoLink;
+        });
+    </script>
   </body>
 </html>
