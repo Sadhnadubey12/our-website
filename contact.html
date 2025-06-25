@@ -7,7 +7,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="modinatheme" />
+    <meta name="author" content="WebGro Solutions" />
     <title>
       WebGro Solutions – All-in-One Digital Solutions for Your Business Growth
     </title>
@@ -16,7 +16,7 @@
       content="WebGro Solutions provides complete digital  Solutions – custom websites, e-commerce Websites, CRM systems & result-driven digital marketing. Grow faster with one trusted partner!"
     />
     <!--<< Favicon >>-->
-    <link rel="shortcut icon" href="assets/img/favicon.svg" />
+    <link rel="shortcut icon" href="assets/img/logo/1750690734437.jpg" />
     <!--<< Bootstrap min.css >>-->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <!--<< Font Awesome.css >>-->
@@ -124,7 +124,9 @@
                     <i class="fal fa-map-marker-alt"></i>
                   </div>
                   <div class="offcanvas__contact-text">
-                    <a target="_blank" href="#">Mahipalpur, Delhi, 110037</a>
+                    <a target="_blank" href="contact.html"
+                      >Mahipalpur, Delhi, 110037</a
+                    >
                   </div>
                 </li>
                 <li class="d-flex align-items-center">
@@ -155,13 +157,22 @@
                 </li>
               </ul>
               <div class="header-button mt-4">
-                <a href="#" class="theme-btn"> Contact Us </a>
+                <a href="contact.html" class="theme-btn"> Contact Us </a>
               </div>
               <div class="social-icon d-flex align-items-center">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a
+                  href="https://www.facebook.com/share/1AuqcLP2nF/"
+                  target="_blank"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a
+                  href="https://www.instagram.com/webgro__solutions?igsh=MXBjazRjem9rNzczeg=="
+                  target="_blank"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+                <!-- <a href="#"><i class="fab fa-youtube"></i></a> -->
+                <!-- <a href="#"><i class="fab fa-linkedin-in"></i></a> -->
               </div>
             </div>
           </div>
@@ -199,15 +210,17 @@
             <ul>
               <li>
                 <i class="fal fa-phone-alt"></i>
-                <a href="#">+91 8051248134 </a>
+                <a href="tel:+918051248134">+91 8051248134</a>
               </li>
               <li>
                 <i class="fal fa-envelope"></i>
-                <a href="#"> webgrosolutions@gmail.com</a>
+                <a href="mailto:webgrosolutions@gmail.com"
+                  >webgrosolutions@gmail.com</a
+                >
               </li>
               <li>
                 <i class="far fa-clock"></i>
-                <a href="#">9.00am - 7.00pm</a>
+                <a href="contact.html">9.00am - 7.00pm</a>
               </li>
             </ul>
             <!-- /.topbar__info -->
@@ -217,8 +230,8 @@
                 target="_blank"
                 ><i class="fab fa-facebook-f"></i
               ></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <!-- <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a> -->
               <a
                 href="https://www.instagram.com/webgro__solutions?igsh=MXBjazRjem9rNzczeg=="
                 target="_blank"
@@ -256,7 +269,7 @@
                           <li><a href="index.html">Home</a></li>
                           <li><a href="about.html">About</a></li>
                           <li><a href="services.html">Our Services</a></li>
-                          <li><a href="blog-details.html">Blog</a></li>
+                          <li><a href="blogs-grid.html">Blog</a></li>
                           <li><a href="contact.html">Contact</a></li>
                         </ul>
                       </nav>
@@ -266,7 +279,9 @@
                     ><i class="fal fa-search"></i
                   ></a>
                   <div class="header-button d-none d-sm-block">
-                    <a href="#" class="theme-btn black-btn"> Get In Touch </a>
+                    <a href="contact.html" class="theme-btn black-btn">
+                      Get In Touch
+                    </a>
                   </div>
                   <div class="header__hamburger d-xl-none my-auto">
                     <div class="sidebar__toggle">
@@ -719,7 +734,7 @@
                         <input
                           type="text"
                           id="first_name"
-                          placeholder="John"
+                          placeholder="Your First Name"
                           required
                         />
                       </div>
@@ -730,7 +745,7 @@
                         <input
                           type="text"
                           id="last_name"
-                          placeholder="Doe"
+                          placeholder="Your Last Name"
                           required
                         />
                       </div>
@@ -752,7 +767,7 @@
                         <input
                           type="tel"
                           id="phone"
-                          placeholder="+91 1234567890"
+                          placeholder="Your Phone Number"
                         />
                       </div>
                     </div>
@@ -804,6 +819,7 @@
                         width: 100%;
                         background-color: white;
                         border: 1px solid #ccc;
+                        color: black;
                         border-radius: 4px;
                         cursor: pointer;
                         user-select: none;
@@ -908,6 +924,18 @@
       </section>
 
       <style>
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+          width: 100%;
+          padding: 12px 15px;
+          border: 1px solid #e2e8f0;
+          border-radius: 8px;
+          background: #f8fafc;
+          color: #000; /* Set text color to black */
+          transition: all 0.3s ease;
+        }
+
         /* Main Section Styling */
         .webgro-contact-wrapper {
           background: #f8fafc;
@@ -1210,8 +1238,13 @@
               <h3 class="split-text right">
                 Looking for the Best IT Business Solutions?
               </h3>
-              <p>As a app web crawler expert, We will help to organize.</p>
+              <p>
+                At <strong>WebGro Solutions</strong>, we deliver Web
+                Development, CRM, E-commerce, and Digital Marketing services to
+                streamline your business and fuel growth.
+              </p>
             </div>
+
             <a
               href="https://wa.me/918051248134"
               target="_blank"
@@ -1224,7 +1257,7 @@
       </section>
 
       <!-- Footer Section Start -->
-      <footer class="footer-wrapper">
+      <footer class="footer-wrapper" style="margin-top: 60px">
         <div class="container">
           <div class="footer-widgets-1 section-padding">
             <div class="row g-5">
@@ -1263,10 +1296,18 @@
                       </button>
                     </div>
                     <div class="social-icon d-flex align-items-center">
-                      <a href="#"><i class="fab fa-facebook-f"></i></a>
-                      <a href="#"><i class="fab fa-twitter"></i></a>
-                      <a href="#"><i class="fab fa-dribbble"></i></a>
-                      <a href="#"><i class="fab fa-instagram"></i></a>
+                      <a
+                        href="https://www.facebook.com/share/1AuqcLP2nF/"
+                        target="_blank"
+                        ><i class="fab fa-facebook-f"></i
+                      ></a>
+                      <!-- <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-dribbble"></i></a> -->
+                      <a
+                        href="https://www.instagram.com/webgro__solutions?igsh=MXBjazRjem9rNzczeg=="
+                        target="_blank"
+                        ><i class="fab fa-instagram"></i
+                      ></a>
                     </div>
                   </div>
                 </div>
@@ -1293,7 +1334,7 @@
                       </a>
                     </li>
                     <li>
-                      <a href="blog-news.html">
+                      <a href="blogs-grid.html">
                         <i class="fas fa-circle"></i>
                         Blog & News
                       </a>
