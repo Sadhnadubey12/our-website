@@ -1,78 +1,305 @@
-<div class="service-details">
-  <!-- Web Development Detail -->
-  <div class="service-section" id="webdev-section">
-    <div class="container">
-      <div class="section-header">
-        <h2>Web Development <span>Services</span></h2>
-        <p>
-          We create responsive, high-performance websites and web applications
-          that drive business growth and enhance user experience
-        </p>
-      </div>
-      <div class="row align-items-center">
-        <div class="col-lg-6">
-          <div class="detail-content">
-            <h3>Complete Web Solutions</h3>
-            <p>
-              Our web development services combine cutting-edge technologies
-              with proven methodologies to deliver:
-            </p>
-            <ul class="service-features">
-              <li>
-                <i class="fas fa-check-circle"></i>
-                <strong>Responsive Websites:</strong> Flawless performance
-                across all devices
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i>
-                <strong>SEO-Friendly Architecture:</strong> Built for maximum
-                search visibility
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i>
-                <strong>High-Performance:</strong> Optimized for speed and
-                scalability
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i>
-                <strong>Custom Landing Pages:</strong> Designed to convert
-                visitors
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i>
-                <strong>Modern Tech Stack:</strong> Latest frontend and backend
-                technologies
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i>
-                <strong>Fully Customizable:</strong> Tailored to your exact
-                requirements
-              </li>
-            </ul>
-
-            <a href="contact.html" class="cta-button"
-              >Get Your Website <i class="fas fa-arrow-right"></i
-            ></a>
-          </div>
+<section class="meeting-schedule-section bg-light py-6">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-5 mb-4 mb-lg-0">
+        <div class="schedule-intro pe-lg-4">
+          <span class="badge bg-primary-soft mb-3">
+            <i class="fas fa-calendar-check me-2"></i> INSTANT SCHEDULING
+          </span>
+          <h2 class="mb-3">Schedule Your Free Consultation</h2>
+          <p class="lead">
+            Book a 30-minute Google Meet session with our experts to discuss
+            your project requirements.
+          </p>
+          <ul class="list-unstyled schedule-features">
+            <li>
+              <i class="fas fa-check-circle text-primary me-2"></i> Get direct
+              meeting link on WhatsApp
+            </li>
+            <li>
+              <i class="fas fa-check-circle text-primary me-2"></i> No login
+              required
+            </li>
+            <li>
+              <i class="fas fa-check-circle text-primary me-2"></i> Calendar
+              reminder included
+            </li>
+          </ul>
         </div>
-        <div class="col-lg-6">
-          <div class="detail-image">
-            <img
-              src="https://img.freepik.com/free-vector/hand-drawn-web-developers_23-2148819604.jpg?uid=R114360829&ga=GA1.1.1947205962.1746602861&semt=ais_hybrid&w=740"
-              alt="Modern Web Development"
-              class="img-fluid"
-            />
-            <div class="image-caption">
-              <!-- <p>
-                Responsive, high-performance websites built for results
-              </p> -->
+      </div>
+      <div class="col-lg-7">
+        <div class="schedule-form-card">
+          <form id="meeting-schedule-form">
+            <div class="form-header">
+              <h3><i class="fas fa-video me-2"></i> Meeting Details</h3>
+            </div>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Your Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter your name"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Phone Number</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    placeholder="Enter WhatsApp number"
+                    required
+                  />
+                </div>
+              </div>
+
+              <!-- Service Needed Dropdown - No Arrow -->
+              <div class="col-12">
+                <div class="form-group">
+                  <label>Service Needed*</label>
+                  <select class="form-control no-dropdown-arrow" required>
+                    <option value="">Select Service</option>
+                    <option>Web Development</option>
+                    <option>E-Commerce Solutions</option>
+                    <option>Digital Marketing</option>
+                    <option>CRM Solutions</option>
+                    <option>Other Services</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="preferredDate">Preferred Date</label>
+                  <div
+                    class="date-input-container"
+                    onclick="document.getElementById('preferredDate').showPicker()"
+                  >
+                    <input
+                      type="date"
+                      id="preferredDate"
+                      class="form-control no-dropdown-arrow"
+                      required
+                    />
+                    <i class="fas fa-calendar-alt date-picker-icon"></i>
+                  </div>
+                </div>
+              </div>
+
+              <style>
+                .date-input-container {
+                  position: relative;
+                  cursor: pointer;
+                }
+
+                .date-picker-icon {
+                  position: absolute;
+                  right: 15px;
+                  top: 50%;
+                  transform: translateY(-50%);
+                  color: #666;
+                  pointer-events: none;
+                }
+
+                /* Hide the default calendar icon */
+                input[type="date"]::-webkit-calendar-picker-indicator {
+                  display: none;
+                }
+
+                /* Style the date input text */
+                input[type="date"] {
+                  padding-right: 40px; /* Make space for our icon */
+                }
+
+                /* Remove focus outline */
+                input[type="date"]:focus {
+                  outline: none;
+                  border-color: #1a73e8;
+                  box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.2);
+                }
+              </style>
+
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Preferred Time</label>
+                  <select class="form-control no-dropdown-arrow" required>
+                    <option value="">--:-- --</option>
+                    <option>09:00 AM</option>
+                    <option>10:00 AM</option>
+                    <option>11:00 AM</option>
+                    <option>12:00 PM</option>
+                    <option>01:00 PM</option>
+                    <option>02:00 PM</option>
+                    <option>03:00 PM</option>
+                    <option>04:00 PM</option>
+                    <option>05:00 PM</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary w-100 py-3">
+                  <i class="fas fa-paper-plane me-2"></i> Get Meeting Link on
+                  WhatsApp
+                </button>
+              </div>
+            </div>
+          </form>
+
+          <!-- Meeting Link Display -->
+          <div id="meet-link-container" class="mt-4" style="display: none">
+            <div class="meet-link-card">
+              <div class="meet-link-header">
+                <i class="fab fa-google text-danger"></i>
+                <h4>Your Meeting is Scheduled!</h4>
+              </div>
+              <div class="meet-link-body">
+                <p>
+                  We've sent the link to your WhatsApp number. You can also copy
+                  it below:
+                </p>
+                <div class="input-group mb-3">
+                  <input
+                    type="text"
+                    id="meet-link"
+                    class="form-control"
+                    readonly
+                  />
+                  <button
+                    class="btn btn-outline-secondary"
+                    onclick="copyMeetLink()"
+                  >
+                    <i class="fas fa-copy"></i>
+                  </button>
+                </div>
+                <a
+                  href="#"
+                  id="join-meet"
+                  class="btn btn-success w-100"
+                  target="_blank"
+                >
+                  <i class="fas fa-video me-2"></i> Join Meeting Now
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+</section>
 
-  <!-- Rest of your existing CRM, Digital Marketing, and E-commerce sections -->
-  <!-- ... -->
-</div>
+<style>
+  /* Remove all dropdown arrows */
+  .no-dropdown-arrow {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: none !important;
+  }
+
+  /* Date input arrow removal */
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+  }
+
+  /* Form Group Styling */
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+
+  /* Label Styling */
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #333;
+    font-size: 0.95rem;
+  }
+
+  /* Input/Select Styling */
+  .form-control {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 0.95rem;
+    color: #333;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+  }
+
+  /* Section Styling */
+  .meeting-schedule-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  }
+
+  /* Form Card Styling */
+  .schedule-form-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    padding: 2rem;
+  }
+
+  /* Meeting Link Card */
+  .meet-link-card {
+    background: #f8f9fa;
+    border-radius: 10px;
+    border: 1px solid #e0e6ed;
+  }
+</style>
+
+<script>
+  document
+    .getElementById("meeting-schedule-form")
+    .addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      // Generate random Google Meet link
+      const randomId = Math.random().toString(36).substring(2, 10);
+      const meetLink = `https://meet.google.com/${randomId}`;
+
+      // Get form values
+      const userName = this.querySelector('input[type="text"]').value;
+      const phoneNumber = this.querySelector('input[type="tel"]').value;
+      const meetingDate = this.querySelector('input[type="date"]').value;
+      const meetingTime = this.querySelector("select").value;
+
+      // Format WhatsApp message
+      const whatsappNumber = "+918051248134";
+      const message = `Hi WebGro Team,\n\nI've scheduled a meeting for ${meetingDate} at ${meetingTime}.\n\nName: ${userName}\nMeeting Link: ${meetLink}\n\nPlease confirm.`;
+
+      // Create WhatsApp link
+      const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+        message
+      )}`;
+
+      // Open WhatsApp in new tab
+      window.open(whatsappLink, "_blank");
+
+      // Show meeting link to user
+      document.getElementById("meet-link").value = meetLink;
+      document.getElementById("join-meet").href = meetLink;
+      document.getElementById("meet-link-container").style.display = "block";
+
+      // Reset form
+      this.reset();
+    });
+
+  function copyMeetLink() {
+    const meetLink = document.getElementById("meet-link");
+    meetLink.select();
+    document.execCommand("copy");
+
+    // Show copied notification
+    const copyBtn = document.querySelector('[onclick="copyMeetLink()"]');
+    copyBtn.innerHTML = '<i class="fas fa-check"></i> Copied!';
+    setTimeout(() => {
+      copyBtn.innerHTML = '<i class="fas fa-copy"></i>';
+    }, 2000);
+  }
+</script>
